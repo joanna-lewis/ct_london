@@ -172,7 +172,7 @@ att_symp = att_symp*365.25 # convert rate from day^-1 to year^-1
 
 import csv
 sc_m = empty(n_sample) # clearance rate per person per year
-with open('../england/stan/chlamydia_two_exponentials_men.csv', 'rU') as m:
+with open('chlamydia_two_exponentials_men.csv', 'rU') as m:
     reader = csv.reader(m)
     i=0
     next(reader) # skip the header row
@@ -181,7 +181,7 @@ with open('../england/stan/chlamydia_two_exponentials_men.csv', 'rU') as m:
         i = i+1
         
 sc_f = empty(n_sample) # clearance rate per person per year
-with open('../england/stan/chlamydia_two_exponentials_women.csv', 'rU') as f:
+with open('chlamydia_two_exponentials_women.csv', 'rU') as f:
     reader = csv.reader(f)
     i=0
     next(reader) # skip the header row
